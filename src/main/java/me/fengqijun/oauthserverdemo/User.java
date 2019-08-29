@@ -6,8 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 
 
 @Data
@@ -30,5 +29,21 @@ public class User extends AbstractEntity<UserId>{
         this.email = email;
         this.password = password;
         this.roles = roles;
+    }
+
+    public static User createOfficer(UserId userId, String email, String password) {
+        Set<UserRole> roles = new HashSet<>();
+        roles.add(UserRole.OFFICER);
+
+        User user = new User(userId, email, password, roles);
+        return user;
+    }
+
+    public static User createCaptain(UserId userId, String email, String password) {
+        Set<UserRole> roles = new HashSet<>();
+        roles.add(UserRole.CAPTAIN);
+
+        User user = new User(userId, email, password, roles);
+        return user;
     }
 }

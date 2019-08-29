@@ -32,6 +32,11 @@ public class UserRepositoryTest {
         assertThat(repository.count()).isEqualTo(1L);
     }
 
+    @Test
+    public void testFindByEmail() {
+//        User user = Users.re
+    }
+
     @TestConfiguration
     static class TestConfig {
         @Bean
