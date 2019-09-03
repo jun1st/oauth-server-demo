@@ -1,5 +1,7 @@
 package me.fengqijun.oauthserverdemo;
 
+import me.fengqijun.oauthserverdemo.model.UniqueIdGenerator;
+import me.fengqijun.oauthserverdemo.model.UniqueIdGeneratorImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;

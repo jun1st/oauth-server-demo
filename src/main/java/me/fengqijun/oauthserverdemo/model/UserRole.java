@@ -1,4 +1,4 @@
-package me.fengqijun.oauthserverdemo;
+package me.fengqijun.oauthserverdemo.model;
 
 public enum UserRole {
     OFFICER,

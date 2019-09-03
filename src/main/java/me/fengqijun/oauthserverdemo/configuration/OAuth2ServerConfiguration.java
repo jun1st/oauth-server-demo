@@ -1,4 +1,4 @@
-package me.fengqijun.oauthserverdemo;
+package me.fengqijun.oauthserverdemo.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -22,13 +22,18 @@ import org.springframework.security.oauth2.provider.token.TokenStore;
 @Configuration
 public class OAuth2ServerConfiguration {
 
+    public static String RESOURCE_ID = "OAuth";
+
     @Configuration
     @EnableResourceServer
     @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
     protected static class ResourceServerConfigurerAdapter extends org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter {
+
+
+
         @Override
         public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
-            resources.resourceId("resource_id");
+            resources.resourceId(RESOURCE_ID);
         }
 
         @Override
@@ -68,7 +73,7 @@ public class OAuth2ServerConfiguration {
                     .withClient("oauth-demo")
                     .authorizedGrantTypes("password", "refresh_token")
                     .scopes("mobile_app")
-                    .resourceIds("RESOURCE_ID")
+                    .resourceIds(RESOURCE_ID)
                     .secret(passwordEncoder.encode("thisistestpassword"));
         }
 

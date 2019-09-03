@@ -1,5 +1,7 @@
 package me.fengqijun.oauthserverdemo;
 
+import me.fengqijun.oauthserverdemo.model.User;
+import me.fengqijun.oauthserverdemo.model.UserId;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 

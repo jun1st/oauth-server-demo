@@ -1,6 +1,5 @@
-package me.fengqijun.oauthserverdemo;
+package me.fengqijun.oauthserverdemo.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

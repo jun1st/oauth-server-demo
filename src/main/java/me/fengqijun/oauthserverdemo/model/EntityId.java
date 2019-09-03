@@ -1,4 +1,4 @@
-package me.fengqijun.oauthserverdemo;
+package me.fengqijun.oauthserverdemo.model;
 
 import java.io.Serializable;
 

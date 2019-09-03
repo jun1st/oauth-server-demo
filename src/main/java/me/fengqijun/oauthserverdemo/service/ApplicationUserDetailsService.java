@@ -1,5 +1,7 @@
-package me.fengqijun.oauthserverdemo;
+package me.fengqijun.oauthserverdemo.service;
 
+import me.fengqijun.oauthserverdemo.model.User;
+import me.fengqijun.oauthserverdemo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

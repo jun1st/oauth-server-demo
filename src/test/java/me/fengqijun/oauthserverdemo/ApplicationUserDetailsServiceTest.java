@@ -1,6 +1,9 @@
 package me.fengqijun.oauthserverdemo;
 
 
+import me.fengqijun.oauthserverdemo.repository.UserRepository;
+import me.fengqijun.oauthserverdemo.service.ApplicationUserDetails;
+import me.fengqijun.oauthserverdemo.service.ApplicationUserDetailsService;
 import org.junit.Test;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

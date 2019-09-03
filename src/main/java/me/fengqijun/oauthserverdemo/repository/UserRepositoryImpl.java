@@ -1,4 +1,7 @@
-package me.fengqijun.oauthserverdemo;
+package me.fengqijun.oauthserverdemo.repository;
+
+import me.fengqijun.oauthserverdemo.model.UniqueIdGenerator;
+import me.fengqijun.oauthserverdemo.model.UserId;
 
 import java.util.UUID;
 

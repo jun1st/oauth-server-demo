@@ -1,5 +1,10 @@
 package me.fengqijun.oauthserverdemo;
 
+import me.fengqijun.oauthserverdemo.model.UniqueIdGenerator;
+import me.fengqijun.oauthserverdemo.model.UniqueIdGeneratorImpl;
+import me.fengqijun.oauthserverdemo.model.User;
+import me.fengqijun.oauthserverdemo.model.UserRole;
+import me.fengqijun.oauthserverdemo.repository.UserRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,6 @@
-package me.fengqijun.oauthserverdemo;
+package me.fengqijun.oauthserverdemo.model;
+
+import me.fengqijun.oauthserverdemo.ArtifactForFramework;
 
 import javax.persistence.MappedSuperclass;
 import java.io.Serializable;

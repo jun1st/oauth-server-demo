@@ -1,5 +1,8 @@
-package me.fengqijun.oauthserverdemo;
+package me.fengqijun.oauthserverdemo.service;
 
+import me.fengqijun.oauthserverdemo.model.User;
+import me.fengqijun.oauthserverdemo.model.UserId;
+import me.fengqijun.oauthserverdemo.model.UserRole;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
 import java.util.Collection;

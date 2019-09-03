@@ -1,5 +1,6 @@
 package me.fengqijun.oauthserverdemo;
 
+import me.fengqijun.oauthserverdemo.service.UserService;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Profile;

@@ -1,5 +1,6 @@
-package me.fengqijun.oauthserverdemo;
+package me.fengqijun.oauthserverdemo.repository;
 
+import me.fengqijun.oauthserverdemo.model.User;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;
