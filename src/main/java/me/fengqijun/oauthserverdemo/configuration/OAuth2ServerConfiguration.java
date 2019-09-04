@@ -62,6 +62,9 @@ public class OAuth2ServerConfiguration {
         @Autowired
         private TokenStore tokenStore;
 
+        @Autowired
+        private OAuthSecurityConfiguration oAuthSecurityConfiguration;
+
         @Override
         public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
             security.passwordEncoder(passwordEncoder);
@@ -70,11 +73,11 @@ public class OAuth2ServerConfiguration {
         @Override
         public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
             clients.inMemory()
-                    .withClient("oauth-demo")
+                    .withClient(oAuthSecurityConfiguration.getMobileAppClientId())
                     .authorizedGrantTypes("password", "refresh_token")
                     .scopes("mobile_app")
                     .resourceIds(RESOURCE_ID)
-                    .secret(passwordEncoder.encode("thisistestpassword"));
+                    .secret(passwordEncoder.encode(oAuthSecurityConfiguration.getMobileAppClientSecret()));
         }
 
         @Override
